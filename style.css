@@ -114,6 +114,7 @@ section {
 }
 
 .sidebar .link-name {
+    color: white;
     opacity: 0;
     transition: opacity .3s;
     pointer-events: none;
@@ -358,8 +359,19 @@ input:checked + label .description {
 }
 
 .text-award {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 30rem;
+    height: max-content;
+    font-size: 28px;
     opacity: 0;
     transform: translateY(30px);
+}
+
+.text-award i {
+    font-size: 2rem;
 }
 
 .container-img .card-award:hover .text-award{
@@ -368,13 +380,7 @@ input:checked + label .description {
     opacity: 1;
 }
 
-.dellete {
-    height: 80px;
-}
-
 .card-award:nth-child(1) {
-    width: auto; 
-    max-height:30rem;
     background-image: url(/ImageStock/awads1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -383,6 +389,8 @@ input:checked + label .description {
 
 
 .card-award {
+    width: 30rem auto; 
+    height:30rem;
     display: flex;
     align-items: flex-end;
     transition: all .3s ease;
